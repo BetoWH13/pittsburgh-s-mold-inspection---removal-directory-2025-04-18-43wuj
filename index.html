@@ -3,13 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Directory Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pittsburgh's Mold Inspection & Removal Directory</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
-<body class="font-sans antialiased bg-gray-50">
+<body>
+    
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="https://BetoWH13.github.io/pittsburgh-s-mold-inspection---removal-directory-2025-04-18-43wuj/" class="text-xl font-bold text-blue-800">PMI Directory</a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#directory" class="text-gray-600 hover:text-blue-800">Directory</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-800">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-800">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button md:hidden" aria-label="Menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden">
+                <a href="#directory" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">Directory</a>
+                <a href="#about" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">About</a>
+                <a href="#contact" class="block py-2 px-4 text-gray-600 hover:bg-gray-100">Contact</a>
+            </div>
+        </nav>
+    </header>
+
     <!-- Hero Section -->
-    <div class="relative h-[50vh] bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="relative h-[50vh] bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=2000'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
         <div class="relative text-center px-4 sm:px-6 lg:px-8">
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">Pittsburgh's Mold Inspection & Removal Directory</h1>
             <p class="text-xl md:text-2xl text-white mb-8">Find the best Mold Inspectors & Removals In Pittsburgh</p>
@@ -18,10 +54,13 @@
     </div>
 
     <!-- Directory Listings -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div id="directory" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Card 1 -->
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 border border-gray-200">
+                <div class="absolute top-4 right-4">
+                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Inspection</span>
+                </div>
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">Ed Lampl Environmental Testing, Home Ins</h3>
                     <p class="text-gray-600 mb-4">Ed Lampl Environmental Testing, Home Inspection and Mold Testing in Pittsburgh</p>
@@ -30,7 +69,10 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 border border-gray-200">
+                <div class="absolute top-4 right-4">
+                    <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Remediation</span>
+                </div>
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">Mold Medics</h3>
                     <p class="text-gray-600 mb-4">Winning the battle against mold and other household allergens with the awards to prove it.</p>
@@ -39,7 +81,10 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 border border-gray-200">
+                <div class="absolute top-4 right-4">
+                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Inspection</span>
+                </div>
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">Mold Inspection & Testing | MI&T</h3>
                     <p class="text-gray-600 mb-4">Pittsburgh Pennsylvania Mold Inspection | Pittsburgh Pennsylvania Mold Testing</p>
@@ -48,7 +93,10 @@
             </div>
 
             <!-- Card 4 -->
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 border border-gray-200">
+                <div class="absolute top-4 right-4">
+                    <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Remediation</span>
+                </div>
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">Pittsburgh Mold Professionals</h3>
                     <p class="text-gray-600 mb-4">Pittsburgh Mold Removal Solutions. The Mold Remediation Pittsburgh PA Locals Count On!</p>
@@ -57,7 +105,10 @@
             </div>
 
             <!-- Card 5 -->
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 border border-gray-200">
+                <div class="absolute top-4 right-4">
+                    <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Full Service</span>
+                </div>
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">Mold Men of Pittsburgh</h3>
                     <p class="text-gray-600 mb-4">Are you dealing with persistent mold issues, or is your home haunted by stubborn odors?</p>
@@ -66,7 +117,10 @@
             </div>
 
             <!-- Card 6 -->
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300">
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 border border-gray-200">
+                <div class="absolute top-4 right-4">
+                    <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Remediation</span>
+                </div>
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">Technoprime Mold Remediation</h3>
                     <p class="text-gray-600 mb-4">At Pittsburgh Mold, we specialize in mold remediation and prevention services in Pittsburgh areas</p>
@@ -85,25 +139,45 @@
     </div>
 
     <!-- About Us Section -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">About Us</h2>
         <p class="text-gray-600 text-lg leading-relaxed text-center max-w-3xl mx-auto">Our directory serves as Pittsburgh's premier resource for connecting homeowners and businesses with trusted mold inspection and removal professionals. We carefully curate our listings to ensure you have access to the most reliable and experienced mold remediation experts in the greater Pittsburgh area, helping you maintain a healthy and safe environment for your family or employees.</p>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer id="contact" class="bg-gray-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Contact</h3>
                     <p class="text-gray-400">Email: itsatest@yahoo.com.mx</p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://BetoWH13.github.io/pittsburgh-s-mold-inspection---removal-directory-2025-04-18-43wuj/blog.html" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="#directory" class="text-gray-400 hover:text-white transition duration-300">Directory</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                    </ul>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Legal</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a></li>
+                        <li><a href="https://BetoWH13.github.io/pittsburgh-s-mold-inspection---removal-directory-2025-04-18-43wuj/privacy.html" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
+                        <li><a href="https://BetoWH13.github.io/pittsburgh-s-mold-inspection---removal-directory-2025-04-18-43wuj/terms.html" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a></li>
                     </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <form class="mt-4">
+                        <input type="email" placeholder="Enter your email" class="bg-gray-800 text-white px-4 py-2 rounded w-full">
+                        <button class="mt-2 bg-blue-600 text-white px-4 py-2 rounded w-full hover:bg-blue-700 transition duration-300">Subscribe</button>
+                    </form>
                 </div>
             </div>
             <div class="mt-8 pt-8 border-t border-gray-800 text-center">
@@ -111,5 +185,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+
 </body>
 </html>
